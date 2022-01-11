@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+    <title>Media Post Helper</title>
+
+{% endblock %}
+
+
+{% block body %}
+
+<h1>Welcome to My Page</h1>
+
+<div class="form">
+    <form action="/Twitter" method="POST">
+        <label for="formTwitterInput" class="form-label">Twitter</label>
+        <input type="text" class="form-control" name="Tweets" id="Tweets" placeholder="New Tweets">
+        <input type="submit" value="Post">
+    </form>
+</div>
+
+<div class="form">
+    <form action="/Reddit" method="POST">
+        <label for="formRedditInput" class="form-label">Reddit</label>
+        <input type="text" class="form-control" name="RedditTitle" id="RedditTitle" placeholder="New Reddit Title">
+        <input type="text" class="form-control" name="RedditContents" id="Reddit Contents" placeholder="New Reddit Contents">
+        <input type="submit" value="Post">
+    </form>
+</div>
+
+{% endblock %}
